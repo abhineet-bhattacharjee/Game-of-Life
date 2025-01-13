@@ -61,7 +61,7 @@ class GameOfLife:
                         temp_grid[y, x] = 1
 
         self.grid = temp_grid
-        self.gen += 1
+        self.gen = self.gen + 1
 
     def manage_events(self):
         for event in pygame.event.get():
